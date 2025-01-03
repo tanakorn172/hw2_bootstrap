@@ -1,1 +1,29 @@
-# hw2_bootstrap
+- git checkout -b develop
+- git add .
+- git commit -m "สร้างโครงสร้างโปรเจค"
+- git add .
+- git commit -m "เพิ่มindex "
+- git add .
+- git commit -m "เพิ่มabout "
+- git add .
+- git commit -m "เพิ่มcontact "
+- git add .
+- git commit -m "เพิ่มรูป "
+- git add .
+- git commit -m "เพิ่มข้อมูล about"
+- git add .
+- git commit -m "เพิ่ม ค้นหา"
+- git add .
+- git commit -m "เพิ่มรูปหน้า index"
+- git add .
+- git commit -m "เพิ่ม bootstrap index"
+- git add .
+- git commit -m "เพิ่ม bootstrap about"
+- git add .
+- git commit -m "เพิ่ม bootstrap contact"
+- git add .
+- git commit -m "เพิ่มlogo"
+- git add .
+- git commit -m "แก้ index bs-logo"
+- git add .
+- git commit -m "แก้ index นิดหน่อย"
