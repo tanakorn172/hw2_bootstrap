@@ -10,32 +10,46 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .Logo-image {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
     <header class="bg-light">
-        <h1> <img class="Logo-image"
-            src="image/logo.webp"
-            alt=""></h1>
-        <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand" href="#">เว็บไซต์ของฉัน</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">หน้าแรก</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">เกี่ยวกับ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อ</a></li>
-                </ul>
+        <div class="container d-flex align-items-center py-2">
+            <img class="Logo-image" src="image/logo.webp" alt="โลโก้ของเว็บไซต์">
+            <h1 class="mb-0">เว็บไซต์ของฉัน</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">เว็บไซต์ของฉัน</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">หน้าแรก</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="about.html">เกี่ยวกับ</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">ติดต่อ</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <div class="container my-4">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+            <input type="text" class="form-control" id="searchInput" placeholder="ค้นหาสถานที่หรือข้อมูลที่คุณสนใจ...">
             <button class="btn btn-primary" onclick="performSearch()">Search</button>
         </div>
     </div>
@@ -43,36 +57,40 @@
     <main class="container">
         <div class="text-center my-4">
             <h1><strong>ยินดีต้อนรับสู่จังหวัดปทุมธานี</strong></h1>
-            <img class="img-fluid rounded" src="image/checkinchill-21042023-1.jpg" alt="">
+            <img class="img-fluid rounded shadow-lg" src="image/checkinchill-21042023-1.jpg" alt="ภาพจังหวัดปทุมธานี">
         </div>
         <p>หนึ่งในพื้นที่ปริมณฑลของกรุงเทพมหานคร...</p>
 
         <h2 class="mt-5">สถานที่แนะนำ</h2>
         <div class="row g-3">
             <div class="col-md-4">
-                <div class="card">
-                    <img src="image/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3RyLzAvdWQvMjg1LzE0MjcxNDEvaHR0aGhyZy5qcGc=.jpg" class="card-img-top" alt="">
+                <div class="card shadow-lg rounded">
+                    <img src="image/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3RyLzAvdWQvMjg1LzE0MjcxNDEvaHR0aGhyZy5qcGc=.jpg" class="card-img-top"
+                        alt="Dream World">
                     <div class="card-body">
                         <h5 class="card-title">Dream World</h5>
                         <p class="card-text">สวนสนุกดรีมเวิลด์ สวนสนุกใกล้กรุงเทพฯ...</p>
+                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="image/checkinchill-16-08-2021-28.webp" class="card-img-top" alt="">
+                <div class="card shadow-lg rounded">
+                    <img src="image/checkinchill-16-08-2021-28.webp" class="card-img-top" alt="พิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ">
                     <div class="card-body">
                         <h5 class="card-title">พิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ</h5>
                         <p class="card-text">พิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ คลองห้า...</p>
+                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="image/วัดพระสุทธิวงส์.webp" class="card-img-top" alt="">
+                <div class="card shadow-lg rounded">
+                    <img src="image/วัดพระสุทธิวงส์.webp" class="card-img-top" alt="ดงตาลสามโคก">
                     <div class="card-body">
                         <h5 class="card-title">ดงตาลสามโคก</h5>
                         <p class="card-text">สัมผัสวิถีชนบท ท่ามกลางทุ่งนาผืนใหญ่...</p>
+                        <a href="#" class="btn btn-primary">อ่านเพิ่มเติม</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +98,11 @@
     </main>
 
     <footer class="bg-dark text-light text-center py-3">
-        <p>&copy; 2024 My First Website</p>
+        <p>&copy; 2024 My First Website | <a href="#" class="text-light">นโยบายความเป็นส่วนตัว</a></p>
+        <div class="mt-2">
+            <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
