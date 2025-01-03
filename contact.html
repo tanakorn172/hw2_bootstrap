@@ -5,51 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">หน้าแรก</a></li>
-                <li><a href="about.html">เกี่ยวกับ</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
+    <header class="bg-primary text-white py-3">
+        <nav class="container d-flex justify-content-center">
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link active text-white">หน้าแรก</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-white">เกี่ยวกับ</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link text-white">ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
-    <h1>ยินดีต้อนรับสู่จังหวัดปทุมธานี</h1>
-    <img class="img-head" src="image/checkinchill-21042023-1.jpg" alt="">
-    <form action="/submit" method="POST" role="form" aria-label="แบบฟอร์มติดต่อ">
-        <div class="form-group">
-            <label for="fullname">ชื่อ-นามสกุล *</label>
-            <input type="text" id="fullname" name="fullname" required aria-required="true" minlength="2" maxlength="100"
-                aria-describedby="fullname-help">
-            <small id="fullname-help">กรุณากรอกชื่อและนามสกุลจริง</small>
-        </div>
-        <div class="form-group">
-            <label for="email">อีเมล *</label>
-            <input type="email" id="email" name="email" required aria-required="true"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="email-help">
-            <small id="email-help">ตัวอย่าง: example@domain.com</small>
-        </div>
-        <div class="form-group">
-            <label for="tel">เบอร์โทรศัพท์</label>
-            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" aria-describedby="tel-help">
-            <small id="tel-help">กรอกหมายเลข 10 หลัก ไม่ต้องมีขีด เช่น 0812345678</small>
-        </div>
-        <div class="form-group">
-            <label for="message">ข้อความ *</label>
-            <textarea id="message" name="message" required aria-required="true" minlength="10" rows="5"
-                aria-describedby="message-help"></textarea>
-            <small id="message-help">กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small>
-        </div>
-        <div class="form-group">
-            <button type="submit" aria-label="ส่งข้อความ">
-                ส่งข้อความ</button>
-        </div>
-    </form>
+
+    <div class="container my-5">
+        <h1 class="text-center text-primary mb-4">ยินดีต้อนรับสู่จังหวัดปทุมธานี</h1>
+        <img class="img-fluid rounded mx-auto d-block mb-4" src="image/checkinchill-21042023-1.jpg" alt="">
+
+        <form action="/submit" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="fullname" class="form-label">ชื่อ-นามสกุล *</label>
+                <input type="text" id="fullname" name="fullname" class="form-control" required minlength="2" maxlength="100"
+                    aria-describedby="fullname-help">
+                <small id="fullname-help" class="form-text text-muted">กรุณากรอกชื่อและนามสกุลจริง</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">อีเมล *</label>
+                <input type="email" id="email" name="email" class="form-control" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="email-help">
+                <small id="email-help" class="form-text text-muted">ตัวอย่าง: example@domain.com</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                <input type="tel" id="tel" name="tel" class="form-control" pattern="[0-9]{10}" aria-describedby="tel-help">
+                <small id="tel-help" class="form-text text-muted">กรอกหมายเลข 10 หลัก ไม่ต้องมีขีด เช่น 0812345678</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">ข้อความ *</label>
+                <textarea id="message" name="message" class="form-control" required minlength="10" rows="5"
+                    aria-describedby="message-help"></textarea>
+                <small id="message-help" class="form-text text-muted">กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
